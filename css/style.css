@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/** Base **/
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 32px 200px;
+  background: url("images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+
+.first-page, .presentation-cards, .about-skills, .realisations, footer {
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: -5px 4px 20px 10px rgba(218, 218, 218, 0.25); }
+
+/** Layouts **/
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  nav .logo {
+    background-color: #E1E3E3;
+    padding: 7px 25px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 12px; }
+  nav .buttons {
+    margin-top: 20px; }
+    nav .buttons a {
+      text-decoration: none;
+      font-weight: lighter;
+      font-size: 14px;
+      font-family: 'Roboto', sans-serif;
+      color: #000000;
+      margin-right: 9px; }
+
+header {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap; }
+  header .left {
+    flex: 3; }
+    header .left h1 {
+      margin-top: -10px;
+      font-size: 60px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: normal; }
+    header .left p {
+      margin-top: -20px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      color: #727272;
+      font-size: 20px; }
+    header .left button {
+      margin-top: 15px;
+      background-color: #777777;
+      border: none;
+      padding: 9px 25px;
+      font-size: 18px;
+      color: #fff;
+      border-radius: 10px;
+      cursor: pointer;
+      outline: none; }
+  header .right {
+    flex: 1; }
+    header .right img {
+      transform: scale(1.05);
+      border-radius: 150px;
+      width: 200px;
+      height: 220px; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: #B6B6B6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px; }
+  footer a {
+    text-decoration: none;
+    color: #2B2B2B;
+    padding: 2px; }
+
+.presentation-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: 'Roboto', sans-serif;
+  text-align: center; }
+  .presentation-cards .active {
+    box-shadow: -3px 6px 20px 10px rgba(168, 164, 164, 0.25);
+    border-radius: 20px;
+    text-align: center; }
+
+.presentation-cards .card {
+  width: 200px;
+  padding: 20px;
+  padding-bottom: 80px;
+  margin-bottom: 10px;
+  text-align: center; }
+  .presentation-cards .card h2 {
+    font-size: 20px;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 100;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #B7B5B5; }
+  .presentation-cards .card p {
+    margin-top: -2px;
+    color: #9F9F9F;
+    font-size: 15px; }
+  .presentation-cards .card button {
+    margin-top: 10px;
+    background-color: #292E59;
+    color: #fff;
+    border: none;
+    padding: 1em 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none; }
+
+/* Fin cartes de présentation */
+.about-skills .card-about {
+  box-shadow: -5px 4px 20px 10px rgba(218, 218, 218, 0.25);
+  padding: 20px;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 50px; }
+  .about-skills .card-about h2 {
+    max-width: 150px;
+    font-size: 25px;
+    font-weight: normal;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #DFDFDF; }
+  .about-skills .card-about p {
+    font-size: 15px;
+    color: #8D8686; }
+
+.about-skills .skills {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .about-skills .skills .card-skills {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center; }
+    .about-skills .skills .card-skills .card-skills-header {
+      padding: 14px 44px;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .about-skills .skills .card-skills .card-skills-header img {
+      height: 50px; }
+
+.realisations .realisations-header {
+  font-family: 'Roboto', sans-serif;
+  text-align: center; }
+  .realisations .realisations-header h1 {
+    font-size: 48px; }
+  .realisations .realisations-header h4 {
+    margin-top: -30px;
+    font-size: 24px; }
+
+.realisations .realisations-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .realisations .realisations-body .realisations-card {
+    padding: 60px 100px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.25);
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.5s; }
+  .realisations .realisations-body .become {
+    background-color: #292E59;
+    color: #fff; }
+  .realisations .realisations-body .realisations-card:hover {
+    transform: scale(1.05); }
