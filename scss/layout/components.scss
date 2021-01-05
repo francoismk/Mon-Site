@@ -139,5 +139,15 @@
     }
 }
 
-
+@media screen and (max-width: 950px){
+    body{
+        margin: 32px 20px;
+    }
+    header .right{
+        display:none;
+    }
+    header .left h1{
+        font-size: 50px;
+    }
+}
 
