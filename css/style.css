@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 32px 200px;
-  background: url("images/background.jpg");
+  background: url("../images/background.jpg");
   background-size: cover;
   background-attachment: fixed; }
 
